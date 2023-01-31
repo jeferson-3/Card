@@ -27,7 +27,7 @@
 
 ## 🖥️ Projeto
 
-Projeto Card e um app tipo portifolio.
+Projeto Card e um app tipo portifolio que serve como cartao de visita.
 
 - [📌Acesse o projeto finalizado, online](https://jeferson-3.github.io/Card/)
 
