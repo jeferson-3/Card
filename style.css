@@ -37,12 +37,13 @@ body *{
   color:  var(--text-color);
 }
 
-#container{
+#container {
   background: var(--cont-url) no-repeat top center/cover;
   border: 2.5px solid var(--bord-border);
-  width: 428px;
+  width: 100%;
+  max-width: 588px;
   height: 750px;
-  margin: 56px auto;
+  margin: 56px auto 0px;
   border-radius: 5px;
 }
 #Avatar {
