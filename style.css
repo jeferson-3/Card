@@ -8,23 +8,27 @@
 
 :root{
   --text-color: white;
-  --bg-url: url(./img/13\ Pro\ -\ 1background-body.svg);
+  --bg-bg: rgb(10, 2, 29);
   --stroke-color: rgba(225, 225, 225, 0.5);
   --surface-color: rgba(225, 225, 225, 0.2);
   --switch-bg-url: url(./img/handle.svg);
+  --cont-url: url(./img/cont.moon.png);
+  --bord-border: white;
 }
 
 .light{
   --text-color: black;
-  --bg-url: url(./img/background-light.png);
+  --bg-bg: rgb(223, 223, 223);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --switch-bg-url: url(./img/ligth.svg);
+  --cont-url: url(./img/cont.sun.png);
+  --bord-border: rgba(0, 0, 0, 0.452);
 }
 
 /* background image, sizen, cover*/
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--bg-bg) no-repeat top center/cover;
   color: var(--text-color);
 }
 
@@ -34,9 +38,10 @@ body *{
 }
 
 #container{
-  border: 2px solid white;
-  width: 400px;
-  height: 700px;
+  background: var(--cont-url) no-repeat top center/cover;
+  border: 2.5px solid var(--bord-border);
+  width: 428px;
+  height: 750px;
   margin: 56px auto;
   border-radius: 5px;
 }
