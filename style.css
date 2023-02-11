@@ -12,17 +12,15 @@
   --stroke-color: rgba(225, 225, 225, 0.5);
   --surface-color: rgba(225, 225, 225, 0.2);
   --switch-bg-url: url(./img/handle.svg);
-  --cont-url: url(./img/cont.moon.png);
   --bord-border: white;
 }
 
 .light{
-  --text-color: black;
-  --bg-bg: rgb(223, 223, 223);
+  --text-color: white;
+  --bg-bg: rgb(151, 151, 151);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color: rgba(0, 0, 0, 0.5);
   --switch-bg-url: url(./img/ligth.svg);
-  --cont-url: url(./img/cont.sun.png);
   --bord-border: rgba(0, 0, 0, 0.452);
 }
 
@@ -30,6 +28,7 @@
 body {
   background: var(--bg-bg) no-repeat top center/cover;
   color: var(--text-color);
+ 
 }
 
 body *{
@@ -38,13 +37,16 @@ body *{
 }
 
 #container {
-  background: var(--cont-url) no-repeat top center/cover;
+  background-image: linear-gradient(black,
+    rgba(63, 63, 192, 0.791),
+    rgba(78, 6, 186, 0.386));
   border: 2.5px solid var(--bord-border);
   width: 100%;
-  max-width: 588px;
+  max-width: 560px;
   height: 750px;
+  padding: 15px;
   margin: 56px auto 0px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 #Avatar {
   text-align: center;
@@ -57,11 +59,7 @@ body *{
   width: 100px;
   margin: auto;
   border-radius: 50%;
-}
-
-img:hover{
-  box-shadow: 0px 0px 1px 3px white;
-  transition: 0.4s ease;
+  border: solid 3px white;
 }
 
 #Avatar a{
